@@ -9,7 +9,7 @@ function TabsItem({
   todos,
   onDelete,
   onTodoFinished,
-  onEditTodo,
+  onEdit,
 }) {
   let itemDisplay;
   if (todos.length > 0) {
@@ -21,7 +21,7 @@ function TabsItem({
             key={todo.id}
             onDelete={onDelete}
             onTodoFinished={onTodoFinished}
-            onEditTodo={onEditTodo}
+            onEdit={onEdit}
             isDetail={false}
           />
         ))}
@@ -50,7 +50,7 @@ TabsItem.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.object).isRequired,
   onDelete: PropTypes.func.isRequired,
   onTodoFinished: PropTypes.func.isRequired,
-  onEditTodo: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
 };
 
 export default TabsItem;

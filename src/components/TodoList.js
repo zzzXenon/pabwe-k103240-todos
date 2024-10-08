@@ -2,13 +2,7 @@ import React from "react";
 import TabsItem from "./TabsItem";
 import PropTypes from "prop-types";
 
-function TodoList({
-  todos,
-  onDelete,
-  onTodoFinished,
-  onEditTodo,
-  keywordSearch,
-}) {
+function TodoList({ todos, onDelete, onTodoFinished, onEdit, keywordSearch }) {
   let todosNotFinished = todos.filter((todo) => !todo.is_finished);
   let todosFinished = todos.filter((todo) => todo.is_finished);
   if (keywordSearch) {
@@ -72,7 +66,7 @@ function TodoList({
             todos={todosNotFinished}
             onDelete={onDelete}
             onTodoFinished={onTodoFinished}
-            onEditTodo={onEditTodo}
+            onEdit={onEdit}
           ></TabsItem>
           <TabsItem
             tabId={"finished"}
@@ -81,7 +75,7 @@ function TodoList({
             todos={todosFinished}
             onDelete={onDelete}
             onTodoFinished={onTodoFinished}
-            onEditTodo={onEditTodo}
+            onEdit={onEdit}
           ></TabsItem>
         </div>
       </div>
@@ -93,7 +87,7 @@ TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.object).isRequired,
   onDelete: PropTypes.func.isRequired,
   onTodoFinished: PropTypes.func.isRequired,
-  onEditTodo: PropTypes.func.isRequired, // Add prop validation for onEditTodo
+  onEdit: PropTypes.func.isRequired, // Add prop validation for onEditTodo
   keywordSearch: PropTypes.string.isRequired,
 };
 

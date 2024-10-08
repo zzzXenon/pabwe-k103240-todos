@@ -19,7 +19,7 @@ class HomePage extends React.Component {
     };
     this.onTodoFinished = this.onTodoFinished.bind(this);
     this.onDeleteHandler = this.onDeleteHandler.bind(this);
-    this.handleEditTodo = this.handleEditTodo.bind(this); // Bind the function
+    this.onEditHandler = this.onEditHandler.bind(this); // Bind the function
   }
 
   onDeleteHandler(id) {
@@ -61,7 +61,7 @@ class HomePage extends React.Component {
     }
   }
 
-  handleEditTodo = (id, newTitle, newDescription) => {
+  onEditHandler = (id, newTitle, newDescription) => {
     editTodo({
       id,
       title: newTitle,
@@ -79,7 +79,7 @@ class HomePage extends React.Component {
             todos={this.state.todos}
             onDelete={this.onDeleteHandler}
             onTodoFinished={this.onTodoFinished}
-            onEditTodo={this.handleEditTodo} // Pass the edit handler here
+            onEdit={this.onEditHandler} // Pass the edit handler here
             keywordSearch={this.props.keyword}
           ></TodoList>
         </div>

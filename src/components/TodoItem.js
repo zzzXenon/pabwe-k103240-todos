@@ -4,14 +4,14 @@ import { formatDate } from "../utils/tools";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function TodoItem({ todo, onDelete, onTodoFinished, onEditTodo, isDetail }) {
+function TodoItem({ todo, onDelete, onTodoFinished, onEdit, isDetail }) {
   const [isEditing, setIsEditing] = useState(false); // Tracks if we're in edit mode
   const [editedTitle, setEditedTitle] = useState(todo.title);
   const [editedDescription, setEditedDescription] = useState(todo.description);
 
   // Function to save the edited changes
   const handleSaveChanges = () => {
-    onEditTodo(todo.id, editedTitle, editedDescription);
+    onEdit(todo.id, editedTitle, editedDescription);
     setIsEditing(false); // Exit edit mode after saving
   };
 
@@ -175,7 +175,7 @@ TodoItem.propTypes = {
   }).isRequired,
   onDelete: PropTypes.func.isRequired,
   onTodoFinished: PropTypes.func.isRequired,
-  onEditTodo: PropTypes.func.isRequired, // Ensure this is required
+  onEdit: PropTypes.func.isRequired, // Ensure this is required
   isDetail: PropTypes.bool.isRequired,
 };
 
