@@ -87,7 +87,7 @@ TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.object).isRequired,
   onDelete: PropTypes.func.isRequired,
   onTodoFinished: PropTypes.func.isRequired,
-  onEdit: PropTypes.func.isRequired, // Add prop validation for onEditTodo
+  onEdit: PropTypes.func.isRequired,
   keywordSearch: PropTypes.string.isRequired,
 };
 

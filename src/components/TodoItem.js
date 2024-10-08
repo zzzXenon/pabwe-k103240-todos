@@ -5,14 +5,13 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function TodoItem({ todo, onDelete, onTodoFinished, onEdit, isDetail }) {
-  const [isEditing, setIsEditing] = useState(false); // Tracks if we're in edit mode
+  const [isEditing, setIsEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(todo.title);
   const [editedDescription, setEditedDescription] = useState(todo.description);
 
-  // Function to save the edited changes
   const handleSaveChanges = () => {
     onEdit(todo.id, editedTitle, editedDescription);
-    setIsEditing(false); // Exit edit mode after saving
+    setIsEditing(false);
   };
 
   let buttonAction;
@@ -175,7 +174,7 @@ TodoItem.propTypes = {
   }).isRequired,
   onDelete: PropTypes.func.isRequired,
   onTodoFinished: PropTypes.func.isRequired,
-  onEdit: PropTypes.func.isRequired, // Ensure this is required
+  onEdit: PropTypes.func.isRequired,
   isDetail: PropTypes.bool.isRequired,
 };
 

@@ -19,7 +19,7 @@ class HomePage extends React.Component {
     };
     this.onTodoFinished = this.onTodoFinished.bind(this);
     this.onDeleteHandler = this.onDeleteHandler.bind(this);
-    this.onEditHandler = this.onEditHandler.bind(this); // Bind the function
+    this.onEditHandler = this.onEditHandler.bind(this);
   }
 
   onDeleteHandler(id) {
@@ -66,9 +66,9 @@ class HomePage extends React.Component {
       id,
       title: newTitle,
       description: newDescription,
-      is_finished: getTodo(id).is_finished, // Keep the current is_finished status
+      is_finished: getTodo(id).is_finished,
     });
-    this.setState({ todos: getAllTodo() }); // Update the state with new todo list
+    this.setState({ todos: getAllTodo() });
   };
 
   render() {
@@ -79,7 +79,7 @@ class HomePage extends React.Component {
             todos={this.state.todos}
             onDelete={this.onDeleteHandler}
             onTodoFinished={this.onTodoFinished}
-            onEdit={this.onEditHandler} // Pass the edit handler here
+            onEdit={this.onEditHandler}
             keywordSearch={this.props.keyword}
           ></TodoList>
         </div>
