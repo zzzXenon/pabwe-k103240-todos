@@ -9,3 +9,5 @@ root.render(
     <App />
   </BrowserRouter>
 );
+
+// Hello, this is a new collaboration
