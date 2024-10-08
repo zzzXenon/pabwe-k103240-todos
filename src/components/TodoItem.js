@@ -75,7 +75,11 @@ function TodoItem({ todo, onDelete, onTodoFinished, onEditTodo, isDetail }) {
         {isEditing ? (
           <div>
             <div className="mb-3">
-              <label htmlFor="editTitle" className="form-label">
+              <label
+                htmlFor="editTitle"
+                className="form-label"
+                style={{ fontWeight: "bold" }}
+              >
                 Edit Title
               </label>
               <input
@@ -87,7 +91,11 @@ function TodoItem({ todo, onDelete, onTodoFinished, onEditTodo, isDetail }) {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="editDescription" className="form-label">
+              <label
+                htmlFor="editDescription"
+                className="form-label"
+                style={{ fontWeight: "bold" }}
+              >
                 Edit Description
               </label>
               <textarea
@@ -121,6 +129,7 @@ function TodoItem({ todo, onDelete, onTodoFinished, onEditTodo, isDetail }) {
                 <Icon.Edit />
                 <span>Edit</span>
               </button>
+
               <button
                 onClick={() => {
                   // eslint-disable-next-line no-undef
