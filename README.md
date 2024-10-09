@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Anggota Kelompok:
+
+1. William Napitupulu - 11S22010
+2. Roy Hutajulu - 11S22032
+3. Ferdinand Sihombing - 11S22040
+
 ## Available Scripts
 
 In the project directory, you can run:
