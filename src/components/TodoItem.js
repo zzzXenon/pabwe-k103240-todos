@@ -11,11 +11,11 @@ function TodoItem({ todo, onDelete, onTodoFinished, onEdit, isDetail }) {
 
   const handleSaveChanges = () => {
     onEdit(todo.id, editedTitle, editedDescription);
-    setIsEditing(false);
+    setIsEditing (false);
   };
 
   let buttonAction;
-  if (!todo.is_finished) {
+  if (!todo.is_finished ) {
     buttonAction = (
       <button
         onClick={() => onTodoFinished(todo.id, 1)}
