@@ -1,3 +1,6 @@
+
+![react-logo-1](https://github.com/user-attachments/assets/2ec1a9d7-97f8-4ffe-afa3-d83be5aa5180)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -10,15 +13,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+Ada beberapa command yang digunakan untuk membantu melakukan praktikum ini:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
