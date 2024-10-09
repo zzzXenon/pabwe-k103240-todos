@@ -18,8 +18,8 @@ function TodoApp() {
     <div>
       <Nav keyword={keyword} keywordChange={changeSearchParams} />
       <Routes>
-        <Route exact path="/" element={<HomePageWrapper keyword={keyword} />} />
-        <Route path="/add" element={<AddPage />} />
+        <Route exact path="/" element= {<HomePageWrapper keyword={keyword} />} />
+        <Route path="/add" element= {<AddPage />} />
         <Route path="/detail/:id" element={<DetailPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

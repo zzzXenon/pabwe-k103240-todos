@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 
 function TodoList({ todos, onDelete, onTodoFinished, onEdit, keywordSearch }) {
   let todosNotFinished = todos.filter((todo) => !todo.is_finished);
-  let todosFinished = todos.filter((todo) => todo.is_finished);
+  let todosFinished =  todos.filter((todo) => todo.is_finished);
   if (keywordSearch) {
     todosNotFinished = todosNotFinished.filter(function (todo) {
       return todo.title.toLowerCase().includes(keywordSearch.toLowerCase());
     });
-    todosFinished = todosFinished.filter(function (todo) {
+    todosFinished =  todosFinished.filter(function (todo) {
       return todo.title.toLowerCase().includes(keywordSearch.toLowerCase());
     });
   }
