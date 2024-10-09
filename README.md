@@ -1,5 +1,5 @@
 
-![react-logo-1](https://github.com/user-attachments/assets/2ec1a9d7-97f8-4ffe-afa3-d83be5aa5180)
+![react-logo-1 = 250x250](https://github.com/user-attachments/assets/2ec1a9d7-97f8-4ffe-afa3-d83be5aa5180)
 
 # Getting Started with Create React App
 
