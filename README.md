@@ -1,5 +1,7 @@
 
-<img src="https://github.com/user-attachments/assets/2ec1a9d7-97f8-4ffe-afa3-d83be5aa5180" width="50%" height="50%">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2ec1a9d7-97f8-4ffe-afa3-d83be5aa5180" width="50%" height="50%" >
+</div>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
