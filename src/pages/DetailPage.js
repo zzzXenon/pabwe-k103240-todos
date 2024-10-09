@@ -4,8 +4,8 @@ import * as Icon from "react-feather";
 import { formatDate } from "../utils/tools";
 
 function DetailPage() {
-  const params = useParams();
-  const todo = getTodo(params.id);
+  const  params = useParams();
+  const  todo = getTodo(params.id);
 
   const badgeStatus = todo.is_finished ? (
     <span className="badge bg-success">Selesai</span>
@@ -16,7 +16,7 @@ function DetailPage() {
   let resultRender;
   if (todo) {
     resultRender = (
-      <div className="container-fluid">
+      <div  className="container-fluid">
         <div className="row">
           <div className="col-12">
             <div className="card mt-3">
